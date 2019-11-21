@@ -7,6 +7,116 @@ $(window).on('load', function() {
 		
 }
 	
+//	hiding biz creator
+	
+	$('#create-next').on('click', function(){
+		bizinfo_hide();
+	});
+	$('#location-next').on('click', function(){
+		location_hide();
+	});
+	$('#owners-next').on('click', function(){
+		owner_hide();
+	});
+	
+//	span clicking
+	
+	
+	$('.start-clickable').on('click', function(){
+		bizinfo_hide2();
+		
+	});
+	
+	// Get the element, add a click listener...
+	document.getElementById("point-indicator").addEventListener("click", function(e) {
+	    // e.target is the CHANGING Element!
+	    // If it was an input item
+	    if(e.target && e.target.matches(".location-clickable")) {
+		// List item found!  Output the ID!
+		location_hide();
+	}
+});
+	
+	// Get the element, add a click listener...
+	document.getElementById("point-indicator").addEventListener("click", function(e) {
+	    // e.target is the CHANGING Element!
+	    // If it was an input item
+	    if(e.target && e.target.matches(".info-clickable")) {
+		// List item found!  Output the ID!
+		bizinfo_hide();
+	}
+});
+	
+	
+	// Get the element, add a click listener...
+	document.getElementById("activity-btns").addEventListener("click", function(e) {
+	    // e.target is the CHANGING Element!
+	    // If it was an input item
+	    if(e.target && e.target.matches(".text-prev")) {
+		// List item found!  Output the ID!
+		
+		location_hide();
+	}
+});
+	
+	// Get the element, add a click listener...
+	document.getElementById("location-btns").addEventListener("click", function(e) {
+	    // e.target is the CHANGING Element!
+	    // If it was an input item
+	    if(e.target && e.target.matches(".text-prev")) {
+		// List item found!  Output the ID!
+		
+		bizinfo_hide2();
+	}
+});
+	
+	// Get the element, add a click listener...
+	document.getElementById("owner-btns").addEventListener("click", function(e) {
+	    // e.target is the CHANGING Element!
+	    // If it was an input item
+	    if(e.target && e.target.matches(".text-prev")) {
+		// List item found!  Output the ID!
+		
+		bizinfo_hide();
+	}
+});
+	
+	$('location-info .text-prev').on('click',function(){
+		bizinfo_hide2();
+	});
+	
+	
+//	$('#activity-next').on('click', function(){
+//		activity_hide();
+//	});
+	function bizinfo_hide2(){
+//			$('.biz-info').addClass('d-none').addClass('bounceOutRight').removeClass('bounceInLeft');
+			$('.biz-info').removeClass('d-none').removeClass('bounceOutRight').addClass('bounceInLeft').siblings().addClass('d-none').addClass('bounceOutRight').removeClass('bounceInLeft');
+			$('.point-indicator span').eq(0).addClass('active').addClass('start-clickable').siblings().removeClass('active');
+		}
+	
+		function bizinfo_hide(){
+//			$('.biz-info').addClass('d-none').addClass('bounceOutRight').removeClass('bounceInLeft');
+			$('.location-info').removeClass('d-none').removeClass('bounceOutRight').addClass('bounceInLeft').siblings().addClass('d-none').addClass('bounceOutRight').removeClass('bounceInLeft');
+			$('.point-indicator span').eq(1).addClass('active').addClass('info-clickable').siblings().removeClass('active');
+		}
+	
+		function location_hide(){
+			$('.owners-info').removeClass('d-none').removeClass('bounceOutRight').addClass('bounceInLeft').siblings().addClass('d-none').addClass('bounceOutRight').removeClass('bounceInLeft');
+			$('.point-indicator span').eq(2).addClass('active').addClass('location-clickable').siblings().removeClass('active');
+		}
+		function owner_hide(){
+			$('.activity-info').removeClass('d-none').removeClass('bounceOutRight').addClass('bounceInLeft').siblings().addClass('d-none').addClass('bounceOutRight').removeClass('bounceInLeft');
+			$('.point-indicator span').eq(3).addClass('active').addClass('owner-clickable').siblings().removeClass('active');
+		}
+//	function owner_hide(){
+//			$('.activity-info').addClass('d-none').addClass('bounceOutRight').removeClass('bounceInLeft');
+//			$('.activity-info').removeClass('d-none').removeClass('bounceOutRight').addClass('bounceInLeft');
+//		}
+	
+	
+	
+	
 	function popitem(){
 		$('.pop-item').addClass('tada');
 	}
@@ -426,6 +536,10 @@ $(document).ready(function() {
 		console.log(title);
 	});
 	
+	$('#close-pricepop').on('click', function(){
+			$('#pay-confirmation-pop').addClass('fadeOut');
+		});
+	
 	$('.transactions-details-container').on('click','.remove-car', function () {
 		$('.notification-container').addClass('fadeIn');
 		$('.notification-container').removeClass('d-none');
@@ -575,6 +689,13 @@ $(document).ready(function() {
 			$('.my-profile-linker').removeClass('fadeIn');
 		
 		}, 1801);
+		
+		
+//		create business form changeing
+		
+		
+		
+		
 	});
 	
 //	data tables
@@ -585,6 +706,8 @@ $(document).ready(function() {
 		pageLength: 5,
        
     } );
+		
+		
 } );
 	$(document).ready(function() {
     $('#bill-table').DataTable( {
@@ -593,6 +716,8 @@ $(document).ready(function() {
 		pageLength: 5,
        
     } );
+		
+		
 } );
 //	data tables
 	

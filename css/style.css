@@ -251,6 +251,10 @@ a:hover {
 	z-index: 10;
 }
 
+.point-indicator span{
+	cursor: pointer;
+}
+
 .main-navigation {
   display: flex;
   padding: 16px;
@@ -296,7 +300,7 @@ form input[type="submit"] {
   box-sizing: border-box;
   display: inline-block;
   position: relative;
-  fill: ;
+
   display: flex;
   align-items: center;
 }
@@ -4591,6 +4595,24 @@ div.dataTables_wrapper div.dataTables_info{
 .year-list li:hover{
 	background: #ccc;
 	color: black;
+}
+
+.point-indicator span{
+	height: 10px;
+	width: 10px;
+	float: left;
+	border-radius: 50%;
+	background: #1c82415e;
+}
+.point-indicator .director{
+	cursor: pointer;
+}
+
+.point-indicator .active, .point-indicator .director:hover{
+	background-color: green !important;
+}
+.btn-white{
+	background: white !important;
 }
 
 

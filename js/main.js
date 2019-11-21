@@ -537,7 +537,7 @@ $(document).ready(function() {
 	});
 	
 	$('#close-pricepop').on('click', function(){
-			$('#pay-confirmation-pop').addClass('fadeOut');
+			$('#pay-confirmation-pop').addClass('fadeOut').addClass('d-none');
 		});
 	
 	$('.transactions-details-container').on('click','.remove-car', function () {

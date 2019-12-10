@@ -2,7 +2,7 @@ const app = new Vue({
   el:'.main',
   data: {
     date:'19th Aug 2019',
-    receiptNo:'7301c5e3-ce5b-c288-78c7-08d724cf177',
+    receiptNo:'08d724cf177',
     buyer:'John Doe',
     phone:'+25470xxxxx59',
 	  refnum:'SRTY6789H67',

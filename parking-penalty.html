@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Theme Region">
 <meta name="description" content="">
-<title>Daily parking</title>
+<title>Parking Penalty</title>
 <!-- Bootstrap CSS -->
 
 <script src="https://unpkg.com/feather-icons"></script>
@@ -766,6 +766,11 @@
             <p class="mb-5 pb-2 text-capitalize"><strong>correctly fill in the form bellow to continue</strong></p>
           </div>
           <form class="transaction-form">
+			  <div class="form-group col-sm-12 col-md-12 p-0">
+              <label for="number-plate" class="text-capitalize">car's registration number</label>
+              <input type="text" class="form-control" id="number-plate" placeholder="eg KAA 1...">
+            </div>
+			  
             <div class="form-group col-sm-12 col-md-12 p-0">
               <label for="zone" class="text-capitalize">select a parking zone</label>
               <select class="form-control" id="zone">
@@ -793,7 +798,7 @@
             </div>
             <div class="col-12 p-4 center danger-light-bg lighter-txt price-container position-relative">
 				 <span class="close-price-container position-absolute"> <i data-feather="x"></i></span>
-              <p class="text-uppercase m-0 font-14"><strong>sub total</strong></p>
+              <p class="text-uppercase m-0 font-14"><strong>Parking Penalty</strong></p>
               <p class="text-uppercase m-0 font-12">kes 2,000</p>
             </div>
             <div class="form-group col-sm-12 col-md-12 p-0 my-3">
@@ -829,10 +834,7 @@
                 <input type="text" class="form-control" id="mpesa-phone" placeholder="eg 07123...">
               </div>
             </div>
-            <div class="form-group col-sm-12 col-md-12 p-0">
-              <label for="number-plate" class="text-capitalize">car's registration number</label>
-              <input type="text" class="form-control" id="number-plate" placeholder="eg KAA 1...">
-            </div>
+            
             <div class="col-12 p-0 text-uppercase mt-5">
               <button type="button" class="btn btn-primary text-white font-14 w-100 p-4 center mx-0 transaction-form-btn"><span class="btn-text text-uppercase font-12">proceede to checkout | ksh 2,000</span> <i data-feather="arrow-right" class="ml-2 float-right pull-right"></i></button>
             </div>

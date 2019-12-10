@@ -3,7 +3,7 @@ const app = new Vue({
   data: {
     date:'19th Aug 2019',
     receiptNo:'7301c5e3-ce5b-c288-78c7-08d724cf177',
-    buyer:'Kelvin Njuguna Ndungu',
+    buyer:'John Doe',
     phone:'+25470xxxxx59',
 	  refnum:'SRTY6789H67',
     paymentMethod: 'Through Mpesa',

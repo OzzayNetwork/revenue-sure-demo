@@ -21,6 +21,26 @@ $(window).on('load', function() {
 	
 //	span clicking
 	
+	$( ".transaction-info" ).submit(function( event ) {
+	 	window.location = "receipt.html";  
+		event.preventDefault();
+	});
+	
+//	showng receipt dialgoue
+	$('.close-receipt-form').on('click',function(){
+		closereceiptform();
+	});
+	
+	$('#get-a-receipt').on('click',function(){
+		showreceiptform();
+		
+	});
+	
+	$('.get-a-receipt').on('click',function(){
+		showreceiptform();
+	});
+//	showng receipt dialgoue
+	
 	
 	$('.start-clickable').on('click', function(){
 		bizinfo_hide2();
@@ -174,6 +194,7 @@ setTimeout(explode, 5000);
 	
 	$('#get-a-receipt').on('click',function(){
 		showreceiptform();
+		
 	});
 	
 	$('.get-a-receipt').on('click',function(){

@@ -716,7 +716,7 @@
 			  	<center class="p-5 text-white">
 					<div class="lds-roller animated"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 					<div class="confirmed-pay d-none animated"><img src="img/icons/transactions-icons/check.svg"></div>
-					<p class="text-center text-white m-0 p-0 mb-3  payment-status">pending daily parking payment</p>
+					<p class="text-center text-white m-0 p-0 mb-3  payment-status">Pending Registration fee payment</p>
 					<h2 class="mb-5 pb-5 text-capitalize text-white"><sup class="font-14 text-uppercase">Kes</sup>2,000</h2>
 			  	</center>
 			  </div>
@@ -820,11 +820,7 @@
               </select>
             </div>
 			  
-			  <div class="form-group col-md-12 col-lg-4 mt-2">
-                <label for="mpesa-phone" class="text-capitalize">P.O. BOX</label>
-                <input type="text" class="form-control" id="plot" placeholder="Box Number" required>
-              </div>
-			  
+			 
 			   <div class="col-sm-12 pt-3">
 				 				  <span type="submit" id="create-next" class="btn btn-primary text-white font-12 border-0 text-capitalize next-btn">next</span>
 
@@ -1078,7 +1074,9 @@
 			  
 			   <div id="activity-btns" class="col-sm-12 pt-3 d-flex justify-content-between">
 					  <span type="submit" class="btn btn-white font-12 text-primary border-2 text-capitalize text-prev">previous</span>
-					  <button type="submit" id="activity-next" class="btn btn-primary text-white font-12 border-0 text-capitalize">finish</button>
+					  <button type="submit" id="activity-next" class="btn btn-primary text-white font-12 border-0 text-capitalize transaction-form-btn d-flex align-items-center">
+				   			<span class="btn-text text-uppercase font-12 center ">Finish</span> <i data-feather="arrow-right" class="ml-2 float-right pull-right"></i>
+						</button>
 				 </div>
 			  
 			  </div>
@@ -1088,10 +1086,10 @@
 			<div class="col-12 d-none p-0 animated details-confirm">
 				 <div class="">
             <p class="mb-5 pb-2 text-capitalize">
-				<span class="back-toform" title="back to transactions form"><i data-feather="arrow-left"  class="mr-3 float-left"></i></span><strong>confirm your transaction details</strong>
+				<span class="back-toform" title="back to transactions form"><i data-feather="arrow-left"  class="mr-3 float-left"></i></span><strong>confirm your business registratipn details</strong>
 					 </p>
 					 <hr class="mt-1 p-0">
-					 <p><strong class="text-capitalize">transaction details</strong></p>
+					 <p><strong class="text-capitalize">registration details</strong></p>
 					 
 					 <div class="transactions-details-container text-capitalize">
 					 	<p class="m-0"><span>business name</span></p>
@@ -1101,11 +1099,34 @@
 						 <strong>selected category comes here</strong>
 						 <hr>
 						 
+						 
+						 
 						<p class="m-0"> <span>KRA PIN</span></p>
 						 <strong class="text-uppercase">Entered KRA pin</strong>
 						 <hr>
+						 
+						  <p class="m-0"> <span>Ward and subcounty</span></p>
+						 <strong class="text-uppercase">Ward, Subcounty</strong>
+						 <hr>
+						 
+						 <p class="m-0"> <span>Business Location details</span></p>
+						 <strong class="text-capitalize">The physical address goes here</strong>
+						 <hr>
+						 
+						 <p class="m-0"> <span>Business's Postal address</span></p>
+						 <strong class="text-uppercase">12355-5689, Town</strong>
+						 <hr>
+						 
+						  <p class="m-0"> <span>Business's Phone Number</span></p>
+						 <strong class="text-uppercase">07xxxxxxxx</strong>
+						 <hr>
+						 
+						 <p class="m-0"> <span>Owner</span></p>
+						 <strong class="text-uppercase">John Doe <strong>Id Num </strong>123456</strong>
+						 <hr>
+						 
 						<div class=" text-right amount-container">
-						 		 <p><span class="text-uppercase text-left">sub total</span> <strong> KES 2,000</strong></p>
+						 		 <p><span class="text-uppercase text-left">Registration Fee</span> <strong> KES 7,800</strong></p>
 						 </div>
 						 <hr>
 						 
@@ -1119,7 +1140,7 @@
 							  <div class="col-12 p-0 text-uppercase mt-5">
               <button type="button" class="btn btn-primary text-white font-14 w-100 p-4 center mx-0 confirm-btn">
 				  <div class="btn-txt animated">
-				  	<span class="btn-text text-uppercase font-12">pay kes 2,000</span> 
+				  	<span class="btn-text text-uppercase font-12">pay kes 7,800</span> 
 				  <i data-feather="arrow-right" class="ml-2 float-right pull-right">
 				  </i>
 				  </div>

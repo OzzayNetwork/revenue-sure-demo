@@ -29,6 +29,7 @@ $(window).on('load', function() {
 //	showng receipt dialgoue
 	$('.close-receipt-form').on('click',function(){
 		closereceiptform();
+		window.location.reload();
 	});
 	
 	$('#get-a-receipt').on('click',function(){

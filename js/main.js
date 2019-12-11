@@ -7,6 +7,33 @@ $(window).on('load', function() {
 		
 }
 	
+	$("[href='/catalog/']").on('click', function(){
+		event.preventDefault();
+//		window.location = "receipt.html";  
+	});
+	
+	$("[href='construction permit.html']").on('click', function(){
+		event.preventDefault();
+		window.location = "pay-econstruction.html";  
+	});
+	
+	
+	$("li [title='pay for a construction permit']").on('click', function(){
+		window.location = "pay-econstruction.html"; 
+	});
+	
+	$("li [title='pay for permit']").on('click', function(){
+		window.location = "pay-econstruction.html"; 
+	});
+	
+	$("[href='create-bill.html']").parent().addClass('d-none');
+	
+	$(".mobileheader-v2 .title-block font").on('click', function(){
+		window.location = "index.html"; 
+	});
+	
+//	hide food handlers
+	
 //	hiding biz creator
 	
 	$('#create-next').on('click', function(){
@@ -25,6 +52,10 @@ $(window).on('load', function() {
 	 	window.location = "receipt.html";  
 		event.preventDefault();
 	});
+	
+	$(".e-logo").on('click', function(){
+		window.location = "index.html";  
+	})
 	
 //	showng receipt dialgoue
 	$('.close-receipt-form').on('click',function(){

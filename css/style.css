@@ -2508,6 +2508,12 @@ transaction pop up styles
     background-repeat: no-repeat;
 	background-position: center;
 }
+#constract-img{
+	background: url("../img/bg/construct.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+}
 
 #house-rent-img{
 	background: url("../img/bg/house-rent-min.jpg");

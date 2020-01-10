@@ -7,6 +7,81 @@ $(window).on('load', function() {
 		
 }
 	
+	//food handlers scripts
+		$('.show-mpesa').on('click', function(){
+			$('.health-mpesa').addClass('d-flex').removeClass('d-none').addClass('fadeInDown').removeClass('fadeOutup');
+		});
+		
+		$('.health-mpesa .close').on('click', function(){
+			$('.health-mpesa').removeClass('d-flex').addClass('d-none').removeClass('fadeInDown').addClass('fadeOutup');
+			$('.details-confirm').removeClass('bounceInLeft').addClass('d-none');
+		});
+	
+//	this action occures while food handlers certificate is being created
+	$('.details-confirm #to-action').on('click', function(){
+		$('.createfood-loader-conntainer').removeClass('d-none').addClass('fadeIn');
+//		call the function bellow once bill has been created succesfully
+		hide_loader();
+		
+	});
+	
+//	once bill is created do the following
+	function hide_loader(){
+		setTimeout(function(){
+		$('.createfood-loader-conntainer').addClass('d-none').removeClass('fadeIn');
+		$('.bill-actions-container').addClass('slideInRight').removeClass('d-none').removeClass('bounceOutRight');
+			$('.details-confirm').addClass('d-none').removeClass('bounceLeft');
+			
+		
+	},5000);
+	}
+	
+//	showing and hiding the confirm details in the food certificate
+	$('.back-to-cert-form').on('click', function(){
+		hideconfirm()
+	});
+	$('#toconfirm').on('click', function(){
+		toconfirm();
+	});
+	function toconfirm(){
+		$('.transactions-form-container').addClass('d-flex').removeClass('d-none').addClass('bounceInLeft').removeClass('bounceOutRight');
+		}
+	
+	function hideconfirm(){
+		$('.transactions-form-container').addClass('d-flex').removeClass('d-none').addClass('bounceInLeft');
+		$('.the-transaction-form').removeClass('d-none').removeClass('bounceOutRight').addClass('bounceInleft');
+		$('.details-confirm').addClass('d-none');
+		}
+	
+	
+	
+	
+	//showing and hiding company and personal details for food handlers certificate
+	
+	$('#cert-type').on('change', function(){
+		var selected=$(this).val();
+		
+		
+		if(selected==1){
+			show_personal()
+		}
+		if(selected==2){
+			show_company();
+		}
+		if(selected==0){
+			show_personal();
+		}
+	})
+	function show_personal(){
+		$('.personal-cert').addClass('fadeIn').removeClass('d-none');
+		$('.company-cert').addClass('d-none').removeClass('fadeIn');		
+	}
+	
+	function show_company(){
+		$('.company-cert').addClass('fadeIn').removeClass('d-none');
+		$('.personal-cert').addClass('d-none').removeClass('fadeIn');		
+	}
+	
 	$("[href='/catalog/']").on('click', function(){
 		event.preventDefault();
 //		window.location = "receipt.html";  
@@ -745,6 +820,9 @@ $(document).ready(function() {
 		
 		
 //		create business form changeing
+		
+		
+		
 		
 		
 		

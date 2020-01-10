@@ -6,6 +6,13 @@ $(window).on('load', function() {
 		$('.hand-phone').addClass('bounceInUp')
 		
 }
+//	$('#certificate-details').modal({ show: false})
+	
+	//show certificate details modal
+	$('.to-print-cert h1').on('click', function(){
+		$('#certificate-details').modal('show');
+
+	});
 	
 	//food handlers scripts
 		$('.show-mpesa').on('click', function(){

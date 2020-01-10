@@ -3404,6 +3404,7 @@ button.close {
     z-index: 1040
 }
 .modal.fade .modal-dialog {
+/*
     -webkit-transform: translate(0, -25%);
     -ms-transform: translate(0, -25%);
     transform: translate(0, -25%);
@@ -3411,6 +3412,7 @@ button.close {
     -moz-transition: -moz-transform .3s ease-out;
     -o-transition: -o-transform .3s ease-out;
     transition: transform .3s ease-out
+*/
 }
 .modal.in .modal-dialog {
     -webkit-transform: translate(0, 0);

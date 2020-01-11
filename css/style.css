@@ -4792,6 +4792,21 @@ div.dataTables_wrapper div.dataTables_info{
 	border: 1px solid;
 }
 
+.social-media{
+	
+}
+
+.social-media a{
+	color: #BEC0C2;
+}
+
+.social-media a:hover{
+	color: #fcc00e;
+}
+
+.social-media a svg{
+	height: 18px;
+}
 
 
 
